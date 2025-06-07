@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Survey Dibuat Oleh Muhammad Fajriansyah">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="column-header">
+        <h1 id="title">Tingkat Minat Generasi Muda terhadap Dunia Pemrograman</h1>
+        <p id="description">Haii!
+          Terima kasih telah bersedia meluangkan waktu untuk mengisi survei ini.
+          Survei ini bertujuan untuk mengetahui tingkat minat generasi muda terhadap dunia pemrograman (coding).<br>
+          Jawaban
+          yang kamu berikan akan digunakan untuk keperluan data analisis dan tidak akan dipublikasikan secara pribadi.
+          Semua informasi akan dijaga kerahasiaannya yaa!<br><br>
+
+          Terima kasih atas partisipasinya! 🙏.</p>
+      </div>
+
+      <div class="column-image">
+        <div id="image-div">
+          <img src="codinggambar.jpg" width="400" height="400" alt="Survey form icon">
+        </div>
+      </div>
+    </div>
+
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nama</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Isi Nama Kamu Disini" required />
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Isi Email Kamu DIsini" required />
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="number">Umur</label>
+        <input type="number" name="age" id="number" min="10" max="100" class="form-control"
+          placeholder="Isi Umur Kamu Disini" />
+      </div>
+
+      <div class="form-group">
+        <p>Apakah kamu pernah belajar coding/pemrograman sebelumnya?</p>
+        <label>
+          <input name="1" value="y" type="radio" class="input-radio" checked />Ya</label>
+        <label>
+          <input name="1" value="g" type="radio" class="input-radio" />Tidak</label>
+      </div>
+
+      <div class="form-group">
+        <p>Seberapa tertarik kamu untuk belajar coding?</p>
+        <label>
+          <input name="2-rate" value="sangat" type="radio" class="input-radio" checked />Sangat
+          tertarik</label>
+        <label>
+          <input name="2-rate" value="tertarik" type="radio" class="input-radio" />Tertarik</label>
+
+        <label>
+          <input name="2-rate" value="biasa-aja" type="radio" class="input-radio" />Biasa saja</label>
+
+        <label>
+          <input name="2" value="tidak-tertarik" type="radio" class="input-radio" />Tidak tertarik</label>
+
+        <label>
+          <input name="2" value="smtt" type="radio" class="input-radio" />Sama sekali tidak tertarik</label>
+      </div>
+
+      <div class="form-group">Apa alasan utama kamu tertarik (atau tidak tertarik) belajar coding?</p>
+        <label>
+          <input name="3" value="ima/gs" type="radio" class="input-radio" checked />Ingin membuat
+          aplikasi/game sendiri
+        </label>
+
+        <label>
+          <input name="3" value="tcckmd" type="radio" class="input-radio" />Terkait cita-cita/karier masa
+          depan
+        </label>
+
+        <label>
+          <input name="3" value="kts/k" type="radio" class="input-radio" /> Karena tugas
+          sekolah/kuliah
+        </label>
+
+        <label>
+          <input name="3" value="tsud" type="radio" class="input-radio" />Terlalu sulit untuk
+          dipahami
+        </label>
+        <label>
+          <input name="3" value="tpwam" type="radio" class="input-radio" /> Tidak punya waktu atau
+          minat</label>
+      </div>
+
+      <div class="form-group">
+        <p>Bahasa pemrograman apa yang paling ingin kamu pelajari?</p>
+        <label>
+          <input name="4" value="js" type="checkbox" class="input-checkbox" checked />Java Script</label>
+
+        <label>
+          <input name="4" value="cc++" type="checkbox" class="input-checkbox" />C/C++</label>
+
+        <label>
+          <input name="4" value="py" type="checkbox" class="input-checkbox" />Python</label>
+
+        <label>
+          <input name="4" value="jv" type="checkbox" class="input-checkbox" />Java</label>
+
+        <label>
+          <input name="4" value="td" type="checkbox" class="input-checkbox" />Tidak Ada</label>
+      </div>
+
+      <div class="form-group">
+        <p>Apakah kamu mengikuti kursus/bootcamp coding di luar sekolah?</p>
+        <label>
+          <input name="5" value="y" type="radio" class="input-radio" checked />Ya</label>
+        <label>
+          <input name="5" value="n" type="radio" class="input-radio" />Tidak</label>
+      </div>
+
+      <div class="form-group">
+        <p>Platform apa yang kamu gunakan untuk belajar coding? (boleh pilih lebih dari satu)</p>
+        <label>
+          <input name="6" value="yt" type="checkbox" class="input-checkbox" checked />Youtube</label>
+
+        <label>
+          <input name="6" value="course" type="checkbox" class="input-checkbox" />Website belajar (Codecademy, W3Schools,
+          Sololearn, dll.)</label>
+
+        <label>
+          <input name="6" value="apk" type="checkbox" class="input-checkbox" /> Aplikasi mobile</label>
+
+        <label>
+          <input name="6" value="book" type="checkbox" class="input-checkbox" />Buku</label>
+
+        <label>
+          <input name="6-1" value="gpn" type="checkbox" class="input-checkbox" />Ga pernah coding</label>
+      </div>
+
+      <div class="form-group">
+        <p>Menurutmu, seberapa penting skill coding di masa depan?</p>
+        <label>
+          <input name="7" value="y" type="radio" class="input-radio" checked />Sangat penting</label>
+        <label>
+          <input name="7" value="g" type="radio" class="input-radio" />Penting</label>
+        <label>
+          <input name="7" value="g" type="radio" class="input-radio" />Kurang penting</label>
+        <label>
+          <input name="7" value="g" type="radio" class="input-radio" />Tidak penting</label>
+      </div>
+
+      <div class="form-group">Apakah kamu berencana untuk mendalami coding lebih serius (misalnya ambil jurusan IT, ikut
+        pelatihan, dsb.)?
+        </p>
+        <label>
+          <input name="8" value="ysm" type="radio" class="input-radio" checked />Ya, sangat mungkin
+        </label>
+
+        <label>
+          <input name="8" value="mm" type="radio" class="input-radio" />Mungkin
+        </label>
+
+        <label>
+          <input name="8" value="ty" type="radio" class="input-radio" /> Tidak Yakin
+        </label>
+
+        <label>
+          <input name="8" value="tss" type="radio" class="input-radio" />Tidak sama sekali
+        </label>
+      </div>
+
+      <div class="comments">
+
+        <label for="comment">
+          Komentar Lain Atau Saran :
+        </label>
+
+        <textarea name="comment" id="comment" placeholder="Isi komentar kamu disini">
+        </textarea>
+      </div>
+
+      <button type="submit" value="submit">
+        Kirim
+      </button>
+
+      <section class="footer">
+        <p> Dibuat Oleh Muhammad Fajriansyah </p>
+      </section>
+
+</body>
+
+</html>
